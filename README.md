@@ -97,7 +97,7 @@
 ### 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Krishna11-cell/Krishna11-cell/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake"/>
+  <img src="https://raw.githubusercontent.com/Krishna11-cell/Krishna11-cell/output/github-contribution-grid-snake.svg">
 </p>
 
 > ⚙️ To enable the snake animation above, add a GitHub Actions workflow using
