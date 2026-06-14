@@ -151,5 +151,3 @@ After the workflow runs once, replace the image URL above with the generated SVG
 <p align="center">
   <img src="https://visitcount.itsvg.in/api?id=Krishna11-cell&label=Profile%20Views&color=0&icon=0&pretty=true" alt="Profile views"/>
 </p>
-
-<p align="center"><i>Proudly created with <a href="https://gprm.itsvg.in">GPRM</a></i></p>
