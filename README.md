@@ -100,52 +100,6 @@
   <img src="https://raw.githubusercontent.com/Krishna11-cell/Krishna11-cell/output/github-contribution-grid-snake.svg">
 </p>
 
-> ⚙️ To enable the snake animation above, add a GitHub Actions workflow using
-> [`Platane/snk`](https://github.com/Platane/snk) to your profile repo. It generates the
-> SVG automatically and commits it to an `output` branch — see setup steps below.
-
-<details>
-<summary>📄 Snake workflow setup (click to expand)</summary>
-
-Create `.github/workflows/snake.yml` in this repository:
-
-```yaml
-name: generate animated snake
-
-on:
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch: {}
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        id: snake-gif
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-After the workflow runs once, replace the image URL above with the generated SVG from the `output` branch.
-
-</details>
-
 ---
 
 <p align="center">
